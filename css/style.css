@@ -1,5 +1,5 @@
 #container {
-  background-color: #ccc;
+  background-color: rgb(172, 164, 164);
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   margin: 2rem auto;
   max-width: 90%;
@@ -8,8 +8,15 @@
 #header {
   display: flex; 
   align-items: center; 
+  height: 110px;
   justify-content: space-between;
-  color: #8B0000;
+  margin-left: 25px;
+  color:rgb(182, 5, 5);
+}
+
+#header img {
+  height: 100px;
+  width: 100px;
 }
 
 #header h1 {
@@ -27,7 +34,7 @@
  }
 
 #header li {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: 'Michroma', sans-serif;
   list-style-type: none;
   text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
@@ -42,14 +49,14 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
   text-align: center;
 }
 
 .hero {
   grid-column: 1/-1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url(https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=483e72cc532caf940f4885ba2e9e9418&auto=format&fit=crop&w=500&q=60);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url("../images/coding-screens.jpg");
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,6 +66,7 @@
 
 .hero-text {
   color: #FFF;
+  font-family: 'Prosto One', cursive;
   text-align: center;
   margin: 5rem;
 }
@@ -67,20 +75,30 @@
     border-radius: 50%;
     padding: 5px;
     margin: 15px;
-    height: 150px;
-    width: 150px;
+    height: 175px;
+    width: 175px;
 }
 
 .content p {
+  display: flex;
   font-family: 'Lato', sans-serif;
   text-align: justify;
-  margin: 15px;
+  margin: 20px;
+  justify-content: center;
 }
-
-/* .content p:nth-child(2) {
-  text-align: center;
+.content a{
+  color: rgb(7, 7, 7);
   text-decoration: none;
-} */
+  padding-left: 5px;
+  }
+
+  .content a:visited {
+    color: inherit;
+  }
+
+  .content a:hover {
+    color: rgb(182, 5, 5);
+  }
 
 .fa {
   padding: 10px;
@@ -93,7 +111,13 @@
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.5;
+    }
+
+.fa-envelope {
+      background: #638494;
+      color: white;
+      /* font-size: 24px; */
     }
 
 .fa-linkedin {
@@ -111,5 +135,6 @@
   height: 50px;
   justify-content: space-between;
   align-items: center;
-  padding-right: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   }
