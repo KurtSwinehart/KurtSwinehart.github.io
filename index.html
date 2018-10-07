@@ -2,10 +2,53 @@
 <html>
 <head>
 	<title>Kurt's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/layout.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<h1>Kurt's Portfolio</h1>
-
+	<main id="container"> 
+		<header id="header">
+		  <h1>{KS Code}</h1>
+		  <ul>
+			<li>About Me</li>
+			<li>Projects</li>
+			<li>Contact</li>
+		  </ul>
+		</header>
+		
+		<div class="grid-container">
+		  <section class="grid-item hero">
+			  <section class="hero-text">
+			<h1 style="font-size:50px">Hi, I'm Kurt Swinehart {</h1>
+		  <p><h2>And I'm a Developer ;}</h2></p>
+		  </section>
+		  </section>
+		  <article class="grid-item content">
+				<img src ="./images/headshot.jpg">
+				<h3>About Me</h3>
+				<p>Lorem ipsum dolor amet post-ironic green juice brunch, palo santo microdosing man braid vexillologist gastropub raclette waistcoat actually cornhole. Beard hexagon mustache tacos, irony letterpress chicharrones plaid cardigan synth biodiesel helvetica venmo. Skateboard sartorial venmo biodiesel, master cleanse small batch meggings vexillologist listicle.</p>
+				</article>
+		  <article class="grid-item content">
+				<img src ="./images/projects.jpg">
+				<h3>Projects</h3>
+				<p>Master cleanse celiac seitan, tbh truffaut echo park taiyaki jean shorts single-origin coffee waistcoat kale chips jianbing. Cronut poke PBR&B stumptown, drinking vinegar kinfolk yuccie tousled raclette. Succulents taiyaki chicharrones, kogi fixie cray pug fam dreamcatcher thundercats la croix keffiyeh. Kinfolk fingerstache pickled cronut.</p>
+		  </article>
+			<article class="grid-item content">
+				<img src ="./images/contact.jpg">
+				<h3>Contact Me</h3>
+				<p>Tacos actually jianbing, twee selfies pug deep v VHS brunch flannel umami farm-to-table. Poke shoreditch fam poutine. Poutine kinfolk iPhone 90's tofu, lumbersexual beard church-key literally adaptogen kombucha hell of lomo venmo. Flexitarian sustainable pork belly organic, locavore marfa vape waistcoat jianbing kitsch bicycle rights thundercats whatever hammock mixtape.</p>
+	 	 </article>
+		</div>
 </body>
+
+<footer id="footer">
+		<small>&copy; {KS Code} 2018</small>
+		<div class ="social">
+		  <a href="#" class="fa fa-linkedin"></a>
+		  <a href="#" class="fa fa-github"></a>
+		</div>
+	  </footer>
 </html>
