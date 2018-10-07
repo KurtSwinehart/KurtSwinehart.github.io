@@ -26,6 +26,11 @@
   text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 } 
 
+#header a {
+  text-decoration: none;
+  color: rgb(223, 23, 23);
+}
+
 #header ul {
   display: flex;
   justify-content: space-around;
