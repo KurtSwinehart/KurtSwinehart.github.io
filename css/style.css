@@ -10,13 +10,13 @@
   align-items: center; 
   height: 110px;
   justify-content: space-between;
-  margin-left: 25px;
-  color:rgb(182, 5, 5);
+  color:rgb(223, 23, 23);
   text-shadow: 5px 5px 3px rgb(37, 37, 37);
 }
 
 #header img {
   height: 100px;
+  margin-left: 25px;
   width: 100px;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .hero-text a:hover {
-  color: rgb(182, 5, 5);
+  color:rgb(223, 23, 23);
 }
 
 #article {
@@ -98,8 +98,17 @@
     border-radius: 50%;
     padding: 5px;
     margin-top: 25px;
-    height: 175px;
-    width: 175px;
+    height: 225px;
+    width: 225px;
+}
+
+.content article {
+  margin: 25px;
+}
+
+.content h2{
+  color:rgb(223, 23, 23);
+  text-shadow: 4px 4px 3px rgb(128, 127, 127);
 }
 
 .content p {
@@ -119,8 +128,12 @@
     color: inherit;
   }
 
+  .project-titles {
+    font-size: 1.15rem;
+  }
+
   .content a:hover {
-    color: rgb(182, 5, 5);
+    color: rgb(223, 23, 23);
   }
 
 .fa {
