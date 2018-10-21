@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/layout.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Michroma|Prosto+One" rel="stylesheet"> 
+</head>
+<body>
+
+<main id="container"> 
+    <header id="header">
+    <img src ="./images/logo.png">
+        <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutMe.html">About Me</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    </header>   
+<section>
+<div id="slider">
+          <div id="slider-frame">
+            
+            <div id="slider-prev">PREV</div>
+            <div id="slider-next">NEXT</div>
+
+            <div id="slider-images">
+              <div data-src="./images/virtual-pet-shelter.png">
+                Virtual Pet Shelter
+              </div>
+              <div data-src="./images/virtual-pets-amok.png">
+                Virtual Pets Amok
+              </div>
+              <div data-src="./images/travel-review-site.png">
+                Travel Review Site
+              </div>
+            </div>
+
+          </div>
+          <div id="slider-caption">
+            The caption.
+          </div>
+        </div>
+
+      </section>
+
+
+    <!-- <article class="grid-item content"> -->
+            <h2 id="Projects">Projects</h2>
+            <button class="collapsible">Virtual Pet Shelter</button>
+            <div class="content">
+            <p class="project-links"><a href="https://github.com/KurtSwinehart/virtual-pet-shelter">Virtual Pet Shelter</a></p>
+            <article>Created a virtual pet shelter that allowed for the
+                    care, intake, and adoption of virtual pets. Utilized Java and TDD.</article>
+            </div>
+            <button class="collapsible">Virtual Pets Amok</button>
+            <div class="content">
+            <p class="project-links"><a href="https://github.com/KurtSwinehart/virtual-pets-amok">Virtual Pets Amok</a></p>
+                <article>Modified existing project to utilize class inheritance and implementation.</article>
+            </div>
+            <button class="collapsible">Travel Review Site</button>
+            <div class="content">
+            <p class="project-links"><a href="https://github.com/KurtSwinehart/travel-reviews-full-stack">Travel Review Site</a></p>
+                <article>Created basic travel review website. Utilized Java, Spring MVC, Thymeleaf, HTML, CSS.</article>
+            </div>
+
+      </article>
+
+      <footer id="footer">
+          <small>&copy; {KS Code} 2018</small>
+          <div class ="social">
+              <a href="mailto:kurtswinehart@gmail.com"	class="fa fa-envelope"></a>
+              <a href="https://www.linkedin.com/in/kurtswinehart/" class="fa fa-linkedin"></a>
+              <a href="https://github.com/KurtSwinehart" class="fa fa-github"></a>
+            </div>
+		</footer>
+    </main>
+</body>
+<script src="js/script.js"></script>
+</html>
