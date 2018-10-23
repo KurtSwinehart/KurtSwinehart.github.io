@@ -60,7 +60,8 @@
     border-radius: 3px;
     border: 1px solid #ccc;
     padding: 0.2em 0.5em;
-    font-size: 1.1em;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     transition: 0.5s;
   }
@@ -71,15 +72,20 @@
   }
 
   .collapsible {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #777;
     color: white;
+        padding: auto 2px;
     cursor: pointer;
-    padding: 18px;
+    padding: 18px auto;
     width: 100%;
     border: none;
     text-align: center;
     outline: none;
-    font-size: 20px;
+    font-size: 18px;
+    width: 800px;
 }
 
 .active, .collapsible:hover {
@@ -87,6 +93,9 @@
 }
 
 .content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 18px;
     padding-top: 30px;
     display: none;
@@ -94,6 +103,7 @@
     background-color: #939faa;
     text-align: center;
     font-size: 1.2rem;
+    width: 750px;
 }
 
 .modal {
