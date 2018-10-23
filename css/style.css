@@ -23,6 +23,13 @@ html {
   margin-left: 25px;
   width: 100px;
 }
+/* to be removed after grading */
+button {
+  margin-right: 25px;
+  color: rgb(223, 23, 23);
+  background: #939faa;
+  border-block-end-color: #000;
+}
 
 #header h1 {
   padding-left: 30px;
@@ -39,7 +46,7 @@ html {
 #header ul {
   display: flex;
   justify-content: space-around;
-  width: 400px;
+  width: 475px;
   margin: 1rem;
  }
 

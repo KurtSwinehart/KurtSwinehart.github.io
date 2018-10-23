@@ -77,3 +77,13 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+// <-- remove button after project is graded -->
+function myFunction() {
+    var x = document.getElementById("myNav");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
