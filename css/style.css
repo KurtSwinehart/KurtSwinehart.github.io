@@ -25,10 +25,23 @@ html {
 }
 /* to be removed after grading */
 button {
-  margin-right: 25px;
   color: rgb(223, 23, 23);
   background: #939faa;
-  border-block-end-color: #000;
+  border-color: rgb(223, 23, 23);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 4px;
+  margin-right: 25px;
+    cursor: pointer;
+    font-family: 'Michroma', sans-serif;
+}
+
+button:hover {
+  opacity: 0.3;
 }
 
 #header h1 {
@@ -134,6 +147,7 @@ button {
   color:rgb(223, 23, 23);
   text-align: center;
   font-size: 30px;
+  font-family: 'Michroma', sans-serif;
 }
 
 #content p {
@@ -159,6 +173,7 @@ button {
   color:rgb(223, 23, 23);
   font-size: 30px;
   text-align: center;
+  font-family: 'Michroma', sans-serif;
 }
 
   .project-links a{
