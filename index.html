@@ -8,22 +8,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Michroma|Prosto+One" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 	<main id="container"> 
 		<header id="header">
 		  <img src ="./images/logo.png">
-		  <nav id="myNav">
+		  <div class="topnav" id="myNav">
 			  <ul>
 				  <li><a href="./index.html">Home</a></li>	
 				  <li><a href="./aboutMe.html">About Me</a></li>
 				  <li><a href="./projects.html">Projects</a></li>
-				  <li><a href="./contact.html">Contact</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
 				</ul>
-			</nav>
+			</div>
 			<!-- remove button after project is graded -->
-			<button onclick="myFunction()">Toggle Nav</button>
+			<!-- <button onclick="myFunction()">Toggle Nav</button> -->
 		</header>
 		
 		<div class="grid-container">
@@ -34,13 +38,13 @@
 		  <p></p> 		
 		</section>
 		  <!-- Trigger/Open The Modal -->
-		  <button id="myBtn">Bio Info</button>
+		  <!-- <button id="myBtn">Bio Info</button> -->
 		  
 		  <!-- The Modal -->
-		  <div id="myModal" class="modal">
+		  <!-- <div id="myModal" class="modal"> -->
 			  
 			  <!-- Modal content -->
-			  <div class="modal-content">
+			  <!-- <div class="modal-content">
 				  <span class="close">&times;</span>
 				  <p></p> 
 				  <p>After a number of years in the financial services industry, I was ready for a new direction and new challenges. I had been hearing more and more about the increasing demand for
@@ -51,7 +55,7 @@
 					<p>Born and raised in central Ohio, I was twice drawn back to the area after leaving for the Marines and graduate school. I currently 
 						live in Columbus with my wife Betheny, daughter Nora, and dog Chewbacca. In my spare time I enjoy spending time with friends and family, hiking, and 
 						working on home improvement projects.</p>
-				</div> 
+				</div>  -->
 		</section>
 		</div>
 </body>
