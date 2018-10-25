@@ -237,16 +237,13 @@ overflow: auto;
     margin: 2rem auto;
     max-width: 90%;
 }
-}
-
-@media screen and (min-width: 600px) {
 .topnav a {
   display: none;
 }
 .topnav a.icon {
   float: right;
   display: block;
-  position: absolute right;
+  /* position: absolute right; */
   }
 
   #header a {
@@ -257,11 +254,41 @@ overflow: auto;
     align-content: right;
   } */
 
-.active a.icon {
-  float: right;
+/* .active a.icon { */
+#fa-bars {  
   display: block;
-  position: absolute right;
-  
+  position: absolute;
+  height: 80px;
+  width: 90px;
+  border-radius: 2px;
+  left: 0;
+  text-indent: -9999px;
+  cursor: pointer;
+  background: #939faa;
+}
+}
+
+@media screen and (min-width: 600px) {
+  /* need to update borrowed names */
+.icon {
+  display: block;
+    position: absolute;
+    height: 80px;
+    width: 90px;
+    border-radius: 2px;
+    top: 10px;
+    left: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+} 
+  a, .accordion .column ul li a {
+    text-decoration: none;
+    color: #0069aa;
+    font-weight: 600;
+
+
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -280,7 +307,7 @@ overflow: auto;
   #myNav {
     justify-content: flex-end;
   }
-
+}
   @media only screen and (min-width: 768px) {
     .example {background: blue;}
 } 
@@ -292,7 +319,7 @@ overflow: auto;
 
   .collapsible {
     padding: 2px auto;
-    width: 50%;
+    width: 80%;
   }
 
   .content {
@@ -303,13 +330,17 @@ overflow: auto;
     padding-top: 30px;
     display: none;
     overflow: hidden;
-    width: 50%;
+    width: 70%;
 }
 
 #content article {
   height: 25px;
   margin-top: 20px;
-  width: 50%;
+  width: 70%;
 }
 
-}
+
+@media only screen and (min-width: 980px) {
+  .example {background: orange;
+  }
+} 
