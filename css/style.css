@@ -3,7 +3,7 @@ html {
  }
 
 #container {
-  background-color:  #939faa;
+  background-color:  #c5cfd8;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   margin: 2rem auto;
   max-width: 90%;
@@ -15,7 +15,6 @@ html {
   height: 110px;
   justify-content: space-between;
   color:rgb(223, 23, 23);
-  text-shadow: 5px 5px 3px rgb(37, 37, 37);
 }
 
 #header img {
@@ -23,11 +22,9 @@ html {
   margin-left: 25px;
   width: 100px;
 }
-/* to be removed after grading */
+
 button {
-  color: rgb(223, 23, 23);
-  background: #939faa;
-  border-color: rgb(223, 23, 23);
+  background: #c5cfd8;
   border-radius: 12px;
   padding: 12px;
   text-align: center;
@@ -47,8 +44,9 @@ button:hover {
 
 #header h1 {
   padding-left: 30px;
+  align-items: center;
   font-family: 'Michroma', sans-serif;
-  font-size: 40px;
+  /* font-size: 60px; */
   text-shadow: 5px 5px 3px rgb(37, 37, 37);
 } 
 
@@ -65,11 +63,10 @@ button:hover {
  }
 
 #header li {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: 'Michroma', sans-serif;
   list-style-type: none;
   padding-left: none;
-  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
 #header li:hover {
@@ -83,7 +80,6 @@ button:hover {
   
 }
 .grid-item {
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
@@ -92,7 +88,7 @@ button:hover {
   grid-column: 1/-1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
     url("../images/coding-screens.jpg");
-  height: 500px;
+  height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,6 +99,7 @@ button:hover {
   color: #FFF;
   font-family: 'Prosto One', cursive;
   text-align: center;
+  padding-top: 30px;
   margin: 5rem;
 }
 .hero-text a {
@@ -129,8 +126,12 @@ button:hover {
     margin-right: auto;
     /* width: 50%; */
     
-    height: 225px;
-    width: 225px;
+    height: 300px;
+    width: 300px;
+}
+
+#content{
+  padding-top: 30px;
 }
 
 #content article {
@@ -139,6 +140,7 @@ button:hover {
 }
 
 #content p {
+  font-size: 1.3rem;
   margin: 15px;
   padding-left: 50px;
   padding-right: 50px;
@@ -164,8 +166,6 @@ button:hover {
   padding-left: 5px;
   }
 
-/* #content a:visited { */
-
   #content a:hover {
     color:rgb(223, 23, 23);
   }
@@ -177,11 +177,8 @@ button:hover {
   font-family: 'Michroma', sans-serif;
   }
 
-#Projects p{
-  
-}  
-
   .project-links a{
+    color: black;
     font-size: 0.8em;
     text-decoration: none;
   }

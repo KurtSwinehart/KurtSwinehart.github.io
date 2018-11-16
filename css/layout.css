@@ -1,3 +1,8 @@
+#slider{
+  padding-top: 40px;
+}
+
+
 #slider ::selection {
     color: inherit;
     background: transparent;
@@ -20,7 +25,7 @@
     padding: 1em;
     color: rgb(223, 23, 23);
     font-weight: bold;
-    text-shadow: 0 0 2px #000;
+    /* text-shadow: 0 0 2px #000; */
     transition: 0.5s;
     cursor: pointer;
   }
@@ -99,49 +104,10 @@
     padding-top: 30px;
     display: none;
     overflow: hidden;
-    background-color: #939faa;
+    background-color:  #c5cfd8;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: 'Lato', sans-serif;
     width: 750px;
 }
 
-.modal {
-display: none; /* Hidden by default */
-position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
-padding-top: 100px; /* Location of the box */
-left: 0;
-top: 0;
-width: 100%; /* Full width */
-height: 100%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content - REMOVE AFTER GRADING */
-.modal-content {
-    background-color: #939faa;
-    margin: auto;
-    padding: 20px;
-    border-radius: 40px;
-    border: 1px solid rgb(223, 23, 23);
-    width: 75%;
-    text-align: justify;
-}
-
-/* The Close Button - REMOVE AFTER GRADING */
-.close {
-    color: rgb(223, 23, 23);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-/* - REMOVE AFTER GRADING */
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
