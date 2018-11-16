@@ -7,13 +7,17 @@
 #header {
   display: flex; 
   height: 110px;
-  max-width: 90%;
+  justify-content: space-between;
 }
 
 #header img {
   height: 100px;
   margin-left: 25px;
   width: 100px;
+}
+
+#myNav {
+  text-align: center;
 }
 
 /* don't think this code does anything anymore */
@@ -30,15 +34,26 @@
   padding-left: none;
 }
 
-button {
+.topnav ul li {
+  list-style-type: none;
+}
+
+/* button {
   display: inline-block;
   border-radius: 12px;
   padding: 12px;
   margin-top: 4px;
   margin-bottom: 4px;
   margin-right: 25px;
+} */
+
+.navButton.fa {
+  display: none;
 }
 
+.topnav, .topnav ul {
+  display: flex;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -188,16 +203,16 @@ overflow: auto;
 }
 
 .topnav a {
-  float: left;
-  display: block;
+  /* display: block; */
   /* color: #f2f2f2; */
   text-align: center;
+  justify-content: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav .icon {
+.navButton {
   display: none;
 }
 
@@ -222,6 +237,12 @@ overflow: auto;
     width: 90%;
   }
 
+  .navButton.fa {
+    display: block;
+    /* height: 80px;
+    width: 90px; */
+  }
+
   .content {
     display: block;
     margin-left: auto;
@@ -240,13 +261,7 @@ overflow: auto;
 .topnav a {
   display: none;
 }
-.topnav a.icon {
-  float: right;
-  display: block;
-  /* position: absolute right; */
-  }
-
-  #header a {
+#header a {
     list-style-position: unset;
   }
 
@@ -262,7 +277,6 @@ overflow: auto;
   width: 90px;
   border-radius: 2px;
   left: 0;
-  text-indent: -9999px;
   cursor: pointer;
   background: #939faa;
 }
@@ -270,33 +284,31 @@ overflow: auto;
 
 @media screen and (min-width: 600px) {
   /* need to update borrowed names */
-.icon {
+.navButton {
   display: block;
     position: absolute;
-    height: 80px;
-    width: 90px;
+    /* height: 80px;
+    width: 90px; */
     border-radius: 2px;
     top: 10px;
     left: 0;
     text-indent: -9999px;
     cursor: pointer;
 } 
-  a, .accordion .column ul li a {
+  /* a, .accordion .column ul li a {
     text-decoration: none;
     color: #0069aa;
-    font-weight: 600;
-
-
+    font-weight: 600; */
 
 
 }
 
 @media screen and (max-width: 600px) {
-.topnav.responsive {position: absolute right;}
+.topnav.responsive {position: absolute;}
   .topnav.responsive .icon {
-    position: absolute right;
-    /* right: 0;
-    top: 0; */
+    position: absolute ;
+    right: 10px;
+    top: 10px; 
   }
   .topnav.responsive a {
     float: none;
@@ -304,8 +316,12 @@ overflow: auto;
     text-align: left;
   }
 
+.navButton {
+  font-size: 2em;
+}
+
   #myNav {
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
   @media only screen and (min-width: 768px) {
@@ -315,6 +331,12 @@ overflow: auto;
   html {
       width: 90%;
       margin: auto;
+  }
+
+  .navButton.fa {
+    display: block;
+    height: 80px;
+    width: 90px;
   }
 
   .collapsible {
@@ -340,7 +362,25 @@ overflow: auto;
 }
 
 
-@media only screen and (min-width: 980px) {
-  .example {background: orange;
+@media only screen and (max-width: 980px) {
+  body {
+    background: orange;
   }
+
+  #myNav a {
+    display: none;
+  }
+
+  .topnav.responsive {position: absolute;}
+  .topnav.responsive .icon {
+    position: absolute ;
+    right: 10px;
+    top: 10px; 
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
 } 
